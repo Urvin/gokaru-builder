@@ -1,4 +1,4 @@
-ARG GOLANG_VERSION=1.17.2
+ARG GOLANG_VERSION=1.17.3
 ARG ALPINE_VERSION=3.14
 FROM golang:${GOLANG_VERSION}-alpine${ALPINE_VERSION} AS builder
 
@@ -9,12 +9,12 @@ LABEL maintainer="Yuriy Gorbachev <yuriy@gorbachev.rocks>"
 #----------------------------------------------------------------------------------------------------------------------#
 
 ARG MOZJPEG_VERSION=4.0.3
-ARG SPNG_VERSION=0.7.0
+ARG SPNG_VERSION=0.7.1
 ARG TIFF_VERSION=4.3.0
 ARG ZOPFLI_VERSION=1.0.3
 ARG LCMS2_VERSION=2.12
-ARG IMAGEMAGICK_VERSION=7.1.0-10
-ARG VIPS_VERSION=8.11.4
+ARG IMAGEMAGICK_VERSION=7.1.0-16
+ARG VIPS_VERSION=8.12.1
 
 ARG LIBDE265_VERSION=1.0.8
 ARG DAV1D_VERSION=0.9.2
